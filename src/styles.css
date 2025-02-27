@@ -1,23 +1,28 @@
 @import "tailwindcss";
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  @apply bg-gray-100 text-gray-900;
+  background: linear-gradient(to bottom, #fefefe, #f8f8f8, #ededed);
+  background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png'); /* Subtle texture */
+  background-blend-mode: overlay;
+}
+
 swiper-container {
-      width: 100%;
-      height: 100%;
-    }
+  width: 100%;
+  height: 100%;
+}
 
-    swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

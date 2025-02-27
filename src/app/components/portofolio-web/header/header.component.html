@@ -1,25 +1,14 @@
-<mat-toolbar>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
-  >
+<mat-toolbar color="primary" class="shadow-md px-4 flex justify-between items-center border-b border-gray-300">
+  <button mat-icon-button aria-label="Open menu" class="md:hidden">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
-  <button
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
-  >
-    <mat-icon>share</mat-icon>
-  </button>
+  <span class="text-xl font-bold tracking-wide text-gray-800">KomikApp</span>
+  <div class="flex items-center space-x-4">
+    <button mat-icon-button aria-label="Search" class="hover:text-blue-500 transition">
+      <mat-icon>search</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="User Profile" class="hover:text-blue-500 transition">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </div>
 </mat-toolbar>

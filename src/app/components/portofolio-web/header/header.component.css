@@ -1,4 +1,13 @@
-.example-spacer {
-    flex: 1 1 auto;
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #ff6b6b, #f06595); 
+  color: white;
+}
+
+.md\\:hidden {
+  @media (min-width: 768px) {
+    display: none;
   }
-  
+}

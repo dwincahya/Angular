@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { CommonModule } from '@angular/common'; 
+import { CommonModule } from '@angular/common';
 import { environment } from '../../../environments/environment.development';
 
 interface Series {
   id: number;
   title: string;
+  alternative: string;
   description: string;
-  image: string;
+  imgUrl: string;
+  type: string;
+  status: string;
+  release: string;
 }
 
 interface ApiResponse {
@@ -39,5 +43,9 @@ export class CardListComponent implements OnInit {
         this.seriesList = response.data;
       }
     });
+  }
+
+  getImageUrl(imgUrl: string): string {
+    return `${environment.apiUrl}${imgUrl}`;
   }
 }
